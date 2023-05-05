@@ -8,7 +8,15 @@ const el = document.getElementById("root");
 const root = ReactDom.createRoot(el)
 // create a react component
 function App(){
-return <h1>Hi creating react app from start </h1>;
+    const message = "Enter ur age";
+return (<input 
+    type="number"
+    min={0}
+    max={10}
+    list={[10,2,3]}
+    style={{color:"blue",border:"3px solid red",backgroundColor:"blue"}}
+    alt={message}/>);
+return(<input placeholder='hi'/>);
 }
 //show the component on screen
 root.render(<App/>)
